@@ -18,11 +18,10 @@
 | `docker run -P <container> <cmd>` | Start container and publish all ports (using `docker port <name>`)|
 | `docker run -p 8888:80 <container> <cmd>` | 8888: exposed port for Host, 80: internal port for web server in container|
 | `docker run <container> --rm` | Start container and delete afterwards|
-| `docker ps -a` | See all containers|
+| `docker ps -a` / `docker container ls` | View all containers|
 | `docker stop <id>` | Stop container |
 | `docker rm <id>` | Delete container|
 | `docker container prune` | Delete stopped containers |
-| `docker container ls` | View containers |
 | `docker container logs <name>` | Logs for container (useful when detached) |
 | `docker build -t <yourusername/container> .`| Build docker image from source. Ensure `Dockerfile`. Output in `docker images` |
 | `docker push <yourusername/container>` | Publish image on Docker Hub. Ensures login |
